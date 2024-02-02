@@ -588,3 +588,13 @@ h6,
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
+
+
+/* custom */
+
+p.custom-a {
+    color: #726D7B;
+}
+.custom-control{
+    background-color: white !important;
+}
