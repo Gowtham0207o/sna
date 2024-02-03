@@ -16,12 +16,10 @@ function run_func() {
   }
     
     console.log("Total Cost:", totalCost);
-
-    alert("Total Cost: " + inputGroupSelect01 + "\nArea: " + inputGroupSelect01);
-    var resultDiv = document.createElement("div");
+ var resultDiv = document.createElement("div");
 
    
-    resultDiv.innerHTML = "<h3>Total Cost: " + totalCost + "</h3>" +
+    resultDiv.innerHTML = "<h3>Total Cost: Rs." + totalCost + "</h3>" +
                           "<p>Area: " + total_sf/435.6 + "Cents</p>";
 
 

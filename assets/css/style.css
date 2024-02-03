@@ -598,3 +598,6 @@ p.custom-a {
 .custom-control{
     background-color: white !important;
 }
+nav.navbar.navbar-expand-lg.navbar-light.px-4.px-lg-5.py-3.py-lg-0 {
+    height: 60px;
+}
