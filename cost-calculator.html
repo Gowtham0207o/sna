@@ -99,29 +99,29 @@
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
                             <p class="text-center mb-4">
                                 The "Construction Cost Estimator" is a tool designed to provide accurate assessments of construction expenses. It aids in budget planning by generating detailed breakdowns of anticipated costs, facilitating informed decision-making and efficient resource allocation throughout the project lifecycle.</p>
-                            <form>
+                       
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Total SQ.ft">
+                                            <input type="number" class="form-control" id="total_sf" placeholder="Total SQ.ft">
                                             <label for="name">Total SQ.ft</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Compound wall">
-                                            <label for="email">Running ft(compound wall) optional</label>
+                                            <input type="number" class="form-control" id="compound" placeholder="Compound wall">
+                                            <label for="compound">Running ft(compound wall) optional</label>
                                         </div>
                                     </div>
                                      <div class="col-md-12">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Compound wall">
-                                            <label for="email">Septic & water tank (eg.5000 + 5000 = 10000in litres)</label>
+                                            <input type="number" class="form-control" id="others" placeholder="Compound wall">
+                                            <label for="others">Septic & water tank (eg.5000 + 5000 = 10000in litres)</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <input type="number" class="form-control" id="subject" placeholder="Subject">
                                             <label for="subject">Others(eg.extra carparking,garden, swimming pool) mention in Rs</label>
                                         </div>
                                     </div>
@@ -137,16 +137,20 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Calculate</button>
+                                        <button class="btn btn-primary w-100 py-3" type="submit" onclick="run_func()">Calculate</button>
                                     </div>
+                                    <div id="resultContainer"></div>
+                                    <canvas id="myChart" style="width:120%;max-width:120%"></canvas>
                                 </div>
-                            </form>
+                            
                         </div>
                     </div>
                 </div>
+             
             </div>
         </div>
         <!-- Contact End -->
+        
         
  
 
@@ -215,8 +219,10 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/cost.js"></script>
 </body>
 
 
