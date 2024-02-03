@@ -29,7 +29,7 @@ function run_func() {
 }
 function makechart(total){
 var xValues = ["Steel", "Cement", "Fittings", "Sand", "Aggregate","Finishing"];
-var yValues = [total*0.24, total*0.16, total*0.24, total*0.12, total*0.7,total*0.17];
+var yValues = [total*0.24, total*0.16, total*0.24, total*0.12, total*0.07,total*0.17];
 var barColors = [
   "#b91d47",
   "#00aba9",
